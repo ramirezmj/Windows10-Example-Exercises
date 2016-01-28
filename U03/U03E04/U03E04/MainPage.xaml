@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="U03E04.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:U03E04"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <!--First-->
+            <TextBox
+                Text="{Binding FirstString, Mode=TwoWay}"
+                Margin="8,8,8,8"
+                />
+            <TextBlock
+            Text="{Binding FirstString}"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" />
+            
+            <!--Second-->
+            <TextBox
+                Text="{Binding SecondString, Mode=TwoWay}"
+                Margin="8,8,8,8"
+                />
+            <TextBlock
+            Text="{Binding SecondString}"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" />
+            
+            <!--Third-->
+            <TextBox
+                 Text="{Binding ThirdString, Mode=TwoWay}"
+                Margin="8,8,8,8"
+                />
+            <TextBlock
+            Text="{Binding ThirdString}"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" />
+            
+            <!--Fourth-->
+            <TextBox
+                Text="{Binding FourthString, Mode=TwoWay}"
+                Margin="8,8,8,8"
+                />
+            <TextBlock
+            Text="{Binding FourthString}"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" />
+            
+        </StackPanel>
+    </Grid>
+</Page>

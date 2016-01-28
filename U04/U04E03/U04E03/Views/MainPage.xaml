@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="U04E03.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:U04E03"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    DataContext="{Binding MainViewModel, Source={StaticResource vmLocator}}"
+    mc:Ignorable="d">
+
+	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		
+		<TextBox 
+			Name="TextBoxMessage" 
+			Text="{Binding Message, Mode=TwoWay}"
+			Grid.Column="0"
+			Grid.Row="0"
+			VerticalAlignment="Center"
+			HorizontalAlignment="Center"
+			Margin="0,0,0,100"
+			/>
+		
+		<Button Name="ButtonGoTo" 
+                Content="GoToSecondPage" 
+                Command="{Binding NavigateToSecondPageCommand}" 
+                CommandParameter="{Binding Message}"/>
+
+	</Grid>
+</Page>

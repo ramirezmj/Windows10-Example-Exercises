@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="U02E03.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:U02E03"
+    RequestedTheme="Light">
+
+</Application>
